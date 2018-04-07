@@ -1,0 +1,5 @@
+{
+	"editor.insertSpaces": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+}
