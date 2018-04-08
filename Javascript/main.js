@@ -8,16 +8,15 @@ function mouseout(id) {
 }
 
 function changeContrast(id) {
-	if(document.getElementById(id).style.backgroundColor == "black") {
-		document.getElementById(id).style.backgroundColor = "white";
-		document.getElementById(id).style.color = "black";
+	if(document.body.style.backgroundColor == "rgb(255, 255, 255)") {
+		document.body.style.backgroundColor = "rgb(0, 0, 0)";
+		document.body.style.color = "rgb(255, 255, 255)";
 	}
 	else {
-		document.getElementById(id).style.backgroundColor = "black";
-		document.getElementById(id).style.color = "white";
+		document.body.style.backgroundColor = "rgb(255, 255, 255)";
+		document.body.style.color = "rgb(0, 0, 0)";
 	}
-}
-
-function hideSidebar() {
-	
+	//document.getElementById(id).style.color = "hsl(0, 0%, 50%)";
+	var textColor = document.body.style.color;
+	window.alert(textColor);
 }
