@@ -12,6 +12,7 @@ body {
 div#topnavbar {
 	position: fixed;
 	z-index: 10;
+	left: 0;
 	height: 50px;
 	width: 100%;
 	background-color: rgb(173, 215, 229);
@@ -21,11 +22,13 @@ div#topnavbar {
 
 div#leftmenu {
 	position: fixed;
+	z-index: 9;
 	top: 50px;
 	float: left;
 	width: 200px;
 	height: calc(100% - 50px);
 	background-color: transparent;
+	border-top: none;
 }
 
 div#leftmenuinner {
