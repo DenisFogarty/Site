@@ -24,3 +24,18 @@ function darken(id, red, green, blue) {
 		elem.style.color = "rgb(255, 255, 255)";
 	}
 }
+
+function saveTheme(theme) {
+	document.cookie = "theme="+theme;
+}
+
+function loadTheme() {
+	if(document.cookie == "theme=dark") {
+		darken("body", "0", "0", "0");
+		document.getElementById("Dark").checked = true;
+	}
+	else {
+		darken("body", "255", "255", "255");
+		document.getElementById("Light").checked = true;
+	}
+}
