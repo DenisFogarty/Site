@@ -7,6 +7,9 @@ body {
 	margin-right: auto;
 	color: rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
+	background-image: url("../gradiant.png"), url("../html5.png");
+	background-position:top, top left;
+	background-repeat: repeat-x, repeat;
 }
 
 div#topnavbar {
